@@ -1,0 +1,121 @@
+/*----------  Header
+------------------------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    padding: 11px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .logoImg {
+        float: left;
+    }
+
+    #nav-icon {
+        float:right;
+    }
+
+    .navbarWrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        margin-left: -100%;
+        transition: all 0.4s ease-in-out;
+        background-color: $main-color;
+    }
+    
+    .navShow {
+        margin-left: 0;
+    }
+    
+    .navigation {
+        text-align: center;
+        position: relative;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .navigation li a {
+        display: inline-block;
+        line-height: 26px;
+        font-size: 20px;
+        padding: 15px 0;
+        color: #fff;
+        text-decoration: none;
+        font-family: $text-font;
+    
+        &:hover {
+            border-top: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    header { 
+
+        #nav-icon {
+            display: none;
+        }
+
+        .logoImg {
+            float: none;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            position: static;
+            margin-left: 0;
+            background-color: #fff;
+        }
+
+        .navigation {
+            overflow: hidden;
+            position: static;
+            transform: translate(0, 0);
+        }
+
+        .navigation li {
+            float: left;
+            text-align: center;
+            width: 25%;
+        }
+
+        .navigation li a {
+            color: #000;
+            width: 100%;
+
+            &:hover {
+                border-top: 2px solid $main-color;
+                border-bottom: 2px solid $main-color;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        .logoImg {
+            float: left;
+        }
+
+        nav {
+            float: right;
+            width: 70%;
+        }
+    }
+}

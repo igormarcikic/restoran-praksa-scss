@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restoran</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbarWrap">
+            <div class="logoImg"><a href="index.html"><img src="img/logo.png"></a></div>
+
+            <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Dishes</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="sliderWrap">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/slider1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/slider2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/slider3.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br />
+
+        <div style="text-align:center; position: relative; margin-top: -45px">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div style="text-align: center">
+        <img src="img/menu.png">
+    </div>
+
+    <main>
+        <article class="leftMain">
+            <ul>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+            </ul>
+        </article>
+
+        <article class="rightMain">
+            <ul>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+                <li>
+                    <div>Lorem ipsum <br>
+                        <p>Lorem ipsum dolor.</p>
+                    </div>
+                    <h4>$45</h4>
+                    <span></span>
+                </li>
+            </ul>
+        </article>
+        <div class="buttonWrap">
+            <button class="menuButton" id="myBtn">View all menu | <i class="fas fa-chevron-down"
+                    style="margin-left: 5px; font-size: 12px;"></i></button>
+        </div>
+
+        <div class="modalWrap">
+            <div id="modalMenu" class="modalMenu">
+
+                <!-- Modal content -->
+                <div class="modal-content-menu">
+                    <span class="close">&times;</span>
+                    <div style="text-align: center">
+                        <img src="./img/logo.jpg">
+                    </div>
+                    <table align='center' style="table-layout: auto; width: 70%">
+                        <tr>
+                            <th align="left">Meal</th>
+                            <th align="right">Price</th>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet. <br>
+                                <span>Lorem ipsum dolor</span>
+                            </td>
+                            <td align="right">$45</td>
+                        </tr>
+                    </table>
+                </div> <!-- Modal end -->
+
+            </div>
+        </div>
+
+    </main>
+
+    <div class="featuredWrap">
+        <h2 class="textHr"><span>Featured Dishes</span></h2>
+        <div class="featuredDish">
+            <img src="./img/dish-1.jpg">
+            <p>Fugiat Nulla</p>
+            <h5>$30</h5>
+            <div class="heart"><i class="far fa-heart clicked" ></i> <span>22</span> People loved this.</div>
+            
+        </div>
+        <div class="featuredDish">
+            <img src="./img/dish-2.jpg">
+            <p>Fugiat Nulla</p>
+            <h5>$30</h5>
+            <div class="heart"><i class="far fa-heart clicked"></i> <span>2</span> People loved this.</div>
+        </div>
+        <div class="featuredDish">
+            <img src="./img/dish-3.jpg">
+            <p>Fugiat Nulla</p>
+            <h5>$30</h5>
+            <div class="heart"><i class="far fa-heart clicked"></i> <span>14</span> People loved this.</div>
+        </div>
+        <div class="featuredDish">
+            <img src="./img/dish-4.jpg">
+            <p>Fugiat Nulla</p>
+            <h5>$30</h5>
+            <div class="heart"><i class="far fa-heart clicked"></i> <span>0</span> People loved this.</div>
+        </div>
+    </div>
+
+    <div class="aboutWrap">
+        <h2 class="textHr"><span>About Us</span></h2>
+        <h2 style=" margin:25px 0">Today`s restaurant is a theater on a grand scale.</h2>
+        <div class="aboutLeft">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore exercitationem dicta libero
+                iusto unde, fugiat placeat numquam sint. <span style="text-decoration: line-through">liquid nam nulla</span>, vel soluta sit quisquam dolores praesentium
+                tempora, magni accusamus molestias quo numquam reiciendis dolorum! Excepturi quia laborum odit impedit,
+                <strong>quasi molestiae quidem quisquam velit officiis alias</strong> aliquam assumenda.</p> 
+                <hr>
+                <p>It was popularized:</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                </ul>
+        </div>
+
+        <div class="aboutRight">
+            <p>orem ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore exercitationem dicta libero
+                iusto unde, fugiat placeat numquam sint. <strong>Aliquid nam nulla,</strong> vel soluta sit quisquam dolores praesentium
+                tempora, magni accusamus molestias quo numquam reiciendis dolorum! Excepturi quia laborum odit impedit,
+                quasi molestiae quidem quisquam velit officiis alias aliquam assumenda, obcaecati consequuntur fugiat
+                <strong>nobis facere, tempora eos! Nobis neque ipsum nulla animi!</strong></p>
+                <blockquote>Memmories are like mulligatawny soup in a cheap restaurant. It is best not to stir them.</blockquote>
+        </div>
+    </div>
+
+    <div class="galleryWrap">
+        <h2 class="textHr"><span>Gallery</span></h2>
+        <div class="galeryImage"><a href="./img/pic1.jpg" data-lightbox="galerija"><img data-lightbox="galerija"
+                    src="./img/pic1.jpg"></a>
+            <div class="overlay"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="galeryImage"><a href="./img/pic2.jpg" data-lightbox="galerija"><img data-lightbox="galerija"
+                    src="./img/pic2.jpg"></a>
+            <div class="overlay"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="galeryImage"><a href="./img/pic3.jpg" data-lightbox="galerija"><img data-lightbox="galerija"
+                    src="./img/pic3.jpg"></a>
+            <div class="overlay"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="galeryImage"><a href="./img/pic4.jpg" data-lightbox="galerija"><img data-lightbox="galerija"
+                    src="./img/pic4.jpg"></a>
+            <div class="overlay"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="galeryImage"><a href="./img/pic5.jpg" data-lightbox="galerija"><img data-lightbox="galerija"
+                    src="./img/pic5.jpg"></a>
+            <div class="overlay"><i class="fas fa-search"></i></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerWrap">
+            <div class="footerCol">
+                <ul>
+                    <li><strong>New York Restaurant</strong></li>
+                    <li>3926 Anmoore Road</li>
+                    <li>New York, NY 10014</li>
+                    <li><strong>718-749-1714</strong></li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <ul>
+                    <li><strong>France Restaurant</strong></li>
+                    <li>68, rue de la Curonne</li>
+                    <li>75002 PARIS</li>
+                    <li><strong>02.94.23.69.56</strong></li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <ul>
+                    <li><strong>Blog</strong></li>
+                    <li>Careers</li>
+                    <li>Privacy Policy</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footerCol">
+                <ul>
+                    <li><img src="./img/logo.png"></li>
+                    <li>© All Rights Reserver 2019.</li>
+                    <li>Find more at Pixelgint.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/lightbox.min.js"></script>
+    <script src="./js/modal.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#nav-icon').on('click', function () {
+                $('nav').toggleClass('navShow');
+            });
+        });
+    </script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#nav-icon').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.clicked').on('click', function(){
+                let heart = $(this);
+                $(heart).addClass('fas');
+
+                let countString = heart.next().html();
+                countString++;
+                heart.next().html(countString);
+            })
+        });
+        
+    </script>
+
+</body>
+
+</html>
